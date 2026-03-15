@@ -1,0 +1,16 @@
+properties:
+  note.cssclasses:
+    displayName: description
+views:
+  - type: cards
+    name: Table
+    filters:
+      and:
+        - file.hasLink("MAGI/000. MAGICORPS HOME")
+    order:
+      - file.name
+      - file.basename
+      - cssclasses
+    image: note.aliases
+    rowHeight: tall
+    cardSize: 250
